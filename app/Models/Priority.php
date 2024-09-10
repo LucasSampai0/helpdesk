@@ -12,4 +12,8 @@ class Priority extends Model
     protected $fillable = [
         'title',
     ];
+
+    public function tickets(){
+        $this->hasMany(Ticket::class);
+    }
 }

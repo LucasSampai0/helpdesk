@@ -14,4 +14,12 @@ class Workspace extends Model
         'description',
         'client_id'
     ];
+
+    public function client(){
+        return $this->belongsTo(Client::class);
+    }
+
+    public function tickets(){
+        return $this->hasMany(Ticket::class);
+    }
 }

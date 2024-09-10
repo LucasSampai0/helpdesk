@@ -14,4 +14,8 @@ class Client extends Model
         'description',
         'type',
     ];
+
+    public function workspace(){
+        $this->hasOne(Workspace::class);
+    }
 }

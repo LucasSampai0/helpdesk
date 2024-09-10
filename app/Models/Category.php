@@ -13,4 +13,8 @@ class Category extends Model
         'title',
         'description',
     ];
+
+    public function tickets(){
+        $this->hasMany(Ticket::class);
+    }
 }

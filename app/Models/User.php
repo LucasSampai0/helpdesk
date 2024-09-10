@@ -49,4 +49,12 @@ class User extends Authenticatable
     public function roles(){
         return $this->belongsToMany(Role::class);
     }
+
+    public function tickets(){
+        return $this->hasMany(Ticket::class);
+    }
+
+    public function client(){
+        return $this->belongsTo(Client::class);
+    }
 }

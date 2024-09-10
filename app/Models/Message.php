@@ -14,4 +14,12 @@ class Message extends Model
         'user_id',
         'ticket_id'
     ];
+
+    public function user(){
+        $this->belongsTo(User::class);
+    }
+
+    public function ticket(){
+        $this->belongsTo(Ticket::class);
+    }
 }
