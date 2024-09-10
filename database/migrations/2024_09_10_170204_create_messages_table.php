@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
+            $table->string('content');
+            $table->foreignId('user_id');
+            $table->foreignId('ticket_id');
             $table->timestamps();
         });
     }
