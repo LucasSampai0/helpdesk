@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Middleware\CheckUserRole;
 
 Route::view('/', 'welcome');
 
@@ -9,7 +10,7 @@ Route::view('dashboard', 'dashboard')
     ->name('dashboard');
 
 Route::view('profile', 'profile')
-    ->middleware(['auth'])
+    ->middleware('auth')
     ->name('profile');
 
 require __DIR__.'/auth.php';
