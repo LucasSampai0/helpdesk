@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\User;
-use App\Models\Workspace;
+use App\Models\Client;
 use App\Models\Priority;
 use App\Models\Category;
 use App\Models\Status;
@@ -29,7 +29,7 @@ class TicketFactory extends Factory
             'priority_id' => Priority::factory(),
             'category_id' => Category::factory(),
             'status_id' => Status::factory(),
-            'workspace_id' => Workspace::factory(),
+            'client_id' => Client::factory(),
         ];
     }
 }

@@ -15,7 +15,8 @@ class Client extends Model
         'type',
     ];
 
-    public function workspace(){
-        $this->hasOne(Workspace::class);
+    public function tickets(){
+        return $this->hasMany(Ticket::class);
     }
+
 }

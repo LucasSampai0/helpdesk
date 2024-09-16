@@ -20,7 +20,7 @@ return new class extends Migration
             $table->foreignId('priority_id');
             $table->foreignId('category_id');
             $table->foreignId('status_id');
-            $table->foreignId('workspace_id');
+            $table->foreignId('client_id');
             $table->timestamps();
         });
     }

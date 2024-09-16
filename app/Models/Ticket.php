@@ -28,8 +28,8 @@ class Ticket extends Model
         $this->belongsTo(User::class);
     }
 
-    public function workspace(){
-        $this->belongsTo(Workspace::class);
+    public function client(){
+        $this->belongsTo(Client::class);
     }
 
     public function priority(){

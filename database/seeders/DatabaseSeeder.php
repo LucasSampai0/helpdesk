@@ -42,8 +42,6 @@ class DatabaseSeeder extends Seeder
         Status::factory(10)->create();
 
         Ticket::factory(10)->create();
-        
-        Workspace::factory(10)->create();
 
     }
 }
